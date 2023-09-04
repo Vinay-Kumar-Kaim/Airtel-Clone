@@ -1,0 +1,74 @@
+.btn-color {
+    background-color: #ff4949;
+    border: 1px solid white;
+    border-radius: 1rem;
+    color: #ffffff;
+    font-size: 12px;
+    height: 23px;
+
+}
+
+.offer-design {
+
+    color: #ffffff;
+    background-color: #ff0000;
+    height: 44px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.account-icon {
+    margin-right: 0.5rem;
+}
+
+.icon-div {
+    /* display: inline; */
+    margin-right: 5rem;
+}
+
+/* 
+width
+540px 
+height 90px */
+.design {
+    width: 540px;
+    height: 90px;
+    background-color: #ff4949;
+    color: #ffffff;
+    border-radius: 1rem;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-size {
+    height: 2rem;
+    width: 30px;
+}
+
+.start {
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    color: #fff;
+}
+
+.start:hover {
+    background-color: rgb(134, 123, 123);
+}
+
+
+
+@media(max-width:420px){
+    .trial{
+        width: 50%;
+    }
+    
+}
+
+@media(max-width:768px){
+    .trial{
+        width: 100%;
+    }
+}
+
