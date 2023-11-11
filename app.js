@@ -1,20 +1,21 @@
-let btn=document.querySelector('.rcharge');
-let input=document.querySelector('#phoneno');
-let info=document.querySelector('#info');
+let phone = document.querySelector("#phone");
+let rechargBtn = document.querySelector("#recharge-btn");
+let inFo = document.querySelector("#info")
+
+rechargBtn.addEventListener("click",()=>{
+  recharg()
 
 
-btn.addEventListener('click',()=>{
-    let data=input.value;
-    if(data.length==10){
-        btn.innerHTML="Recharged";
-        btn.style.backgroundColor="green";
-        info.innerHTML="+91 "+data+" has been recharged successfully";
-        info.style.color="green";
-        input.value="";
-    }
-    else if(data.length!=10){
-        info.innerHTML="* Please type a valid mobile number";
-        info.style.color="red";
-    }
 })
+
+function recharg(){
+    if((phone.value).length==10){
+        inFo.style.color ="green"
+        inFo.innerText =`+91 ${phone.value} has been recharged successfully`
+        inFo.value = ""
+    }else{
+        inFo.style.color ="red"
+        inFo.innerText =`* Please type a valid number`
+    }
+}
 
